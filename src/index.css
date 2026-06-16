@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hanken+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "EB Garamond", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Medieval Theme Colors */
+  --color-goth-bg: #0b0c13;
+  --color-glass-dark: rgba(13, 15, 26, 0.75);
+  --color-glass-deep: rgba(7, 8, 15, 0.9);
+  --color-gold-antique: #d4b245;
+  --color-gold-bright: #ffd75c;
+  --color-goth-border: rgba(212, 178, 69, 0.15);
+  --color-goth-border-focus: rgba(212, 178, 69, 0.4);
+  --color-goth-blue: #0b1a3e;
+  --color-cobalt-light: #3b82f6;
+  --color-velvet-purple: #7c3aed;
+  --color-neon-violet: #a78bfa;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-goth-bg);
+    color: #e5e7eb;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom gorgeous scrollbar for scroll areas */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(11, 12, 19, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 178, 69, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 178, 69, 0.6);
+}
+
